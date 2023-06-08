@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPPEE - Reservas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">KOPPEE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonial.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="reservation.html">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de la Barra de Navegación -->
+
+
+    <!-- Sección "Reservas" -->
+    <section id="reservation" class="section-bg">
+        <div class="container">
+
+            <header class="section-header">
+                <h3>Reservas</h3>
+            </header>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <form action="forms/reservation.php" method="post" role="form" class="php-email-form">
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre"
+                                    required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Correo Electrónico" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Teléfono"
+                                    required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="date" class="form-control" id="date" placeholder="Fecha"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="time" class="form-control" id="time" placeholder="Hora"
+                                    required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="number" name="people" class="form-control" id="people"
+                                    placeholder="Número de Personas" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Hacer Reserva</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Fin de la Sección "Reservas" -->
+
+
+    <!-- Pie de Página -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-top">
+                        <h4>KOPPEE</h4>
+                        <p>Tu lugar favorito para disfrutar del mejor café.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin del Pie de Página -->
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Archivos JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
