@@ -48,23 +48,70 @@
         </nav>
     </div>
     <!-- Fin de la Barra de Navegación -->
-    <!-- Formulario-->
-    
-    <section>
-		<h2>Formulario de contacto</h2>
-		<form action="http://www2.gonzalonazareno.org/josedom/resultado.php" method="post">
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" required>
-		    <label for="email">Correo electrónico:</label>
-		    <input type="email" id="email" name="email" required>
+      <!-- Sección "Contacto" -->
+    <section id="contact" class="section-bg">
+        <div class="container">
 
-		    <label for="mensaje">Mensaje:</label>
-		    <textarea id="mensaje" name="mensaje" required></textarea>
+            <header class="section-header">
+                <h3>Contacto</h3>
+            </header>
 
-		    <button type="submit">Enviar</button>
-	        </form>
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="row">
+
+                        <div class="col-md-6 info">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                <p>Calle Principal 123, Ciudad, País</p>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-envelope"></i>
+                                <p>info@koppee.com</p>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <p>+1 234 567 890</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Correo Electrónico" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Asunto" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
+                                        required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit">Enviar Mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </section>
-    <!--Fin formulario-->
+    <!-- Fin de la Sección "Contacto" -->
 
 
     <!-- Sección "Menú" -->
