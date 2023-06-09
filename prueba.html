@@ -2,53 +2,47 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <title>KOPPEE - Menú</title>
-
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Fuente de Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPPEE - Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <!-- Barra de Navegación -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">KOPPEE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link">Inicio</a>
-                    <a href="about.html" class="nav-item nav-link">Acerca de</a>
-                    <a href="service.html" class="nav-item nav-link">Servicios</a>
-                    <a href="menu.html" class="nav-item nav-link">Menú</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Páginas</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.html" class="dropdown-item">Reservaciones</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonios</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonial.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!-- Fin de la Barra de Navegación -->
-      <!-- Sección "Contacto" -->
+
+
+    <!-- Sección "Contacto" -->
     <section id="contact" class="section-bg">
         <div class="container">
 
@@ -114,56 +108,14 @@
     <!-- Fin de la Sección "Contacto" -->
 
 
-    <!-- Sección "Menú" -->
-    <section id="menu" class="menu">
-        <div class="container">
-            <div class="section-title">
-                <h2>Formulario de contacto</h2>
-		<form action="http://www2.gonzalonazareno.org/josedom/resultado.php" method="post">
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" required>
-		    <label for="email">Correo electrónico:</label>
-		    <input type="email" id="email" name="email" required>
-
-		    <label for="mensaje">Mensaje:</label>
-		    <textarea id="mensaje" name="mensaje" required></textarea>
-
-		    <button type="submit">Enviar</button>
-	        </form>
-            </div>
-        </div>
-    </section>
-    <!-- Fin de la Sección "Menú" -->
-
-
     <!-- Pie de Página -->
-    <footer class="container-fluid bg-dark text-white py-5">
+    <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-uppercase mb-4">KOPPEE</h4>
-                    <p>Café de alta calidad en un ambiente acogedor</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-uppercase mb-4">Horario de Atención</h4>
-                    <p>Lunes - Viernes: 8:00 AM - 10:00 PM<br>Sábados - Domingos: 9:00 AM - 11:00 PM</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-uppercase mb-4">Contacto</h4>
-                    <p>
-                        123 Calle Principal<br>
-                        Ciudad, País<br>
-                        info@koppee.com<br>
-                        +1234567890
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-uppercase mb-4">Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <div class="col-md-12">
+                    <div class="footer-top">
+                        <h4>KOPPEE</h4>
+                        <p>Tu lugar favorito para disfrutar del mejor café.</p>
                     </div>
                 </div>
             </div>
@@ -172,15 +124,12 @@
     <!-- Fin del Pie de Página -->
 
 
-    <!-- JavaScripts -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- Script Personalizado -->
+    <!-- Archivos JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
